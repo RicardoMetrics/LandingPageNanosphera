@@ -1,3 +1,4 @@
+/* Reset general de border, margen y padding */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,6 +9,7 @@ body {
     overflow-x: hidden;
 }
 
+/* Estilos contenedor general */
 .main {
     height: 100vh;
     display: flex;
@@ -16,6 +18,7 @@ body {
     padding-top: 3rem;
 }
 
+/* Estilos del contenedor general para que sea responsivo y alineado*/
 .settings {
     max-width: 28rem;
     padding-left: 1rem;
@@ -24,6 +27,7 @@ body {
     text-align: center;
 }
 
+/* Estilos del div para la imagen de fondo*/
 .bg-img {
     position: absolute;
     top: 0;
@@ -38,6 +42,7 @@ body {
     min-height: 100%;
 }
 
+/* Estilos del div para la capa de color con transparencia */
 .bg-color {
     height: 100vh;
     width: 100vw;
@@ -49,6 +54,7 @@ body {
     opacity: .8;
 }
 
+/* Estilos del div para el contenido */
 .content {
     z-index: 2;
 }
@@ -93,4 +99,13 @@ body {
 
 .grafica {
     width: 22rem;
+}
+
+/* Media Query para ajustar responsive en móvil */
+
+@media (max-widht: 960px) {
+    .settings {
+        padding: 0 3rem 0 3rem;
+    }
+
 }
